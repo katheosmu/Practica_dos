@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NewProject</string>
+
+    <string name="nombre">Nombre:</string>
+    <string name="dignombre">Digite el nombre</string>
+
+    <string name="correo">Correo:</string>
+    <string name="digcorreo">ejemplo@ejemplo.com</string>
+
+    <string name="telefono">Telefono:</string>
+    <string name="digtelefono">Digite el telefono</string>
+
+    <string name="sexo">Sexo:</string>
+    <string name="Mas">M</string>
+    <string name="Fem">F</string>
+
+    <string name="cities">Ciudad:</string>
+    <string name="ciudad_prompt">Eliga una ciudad</string>
+
+    <string name="Hob">Hobbies</string>
+    <string name="h1">Nadar</string>
+    <string name="h2">Leer</string>
+    <string name="h3">Ir a cine</string>
+    <string name="h4">Patinar</string>
+
+    <string name="ok">OK</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -5,12 +5,12 @@
     <string name="Quices">Quices</string>
     <string name="Exposiciones">Exposiciones</string>
     <string name="Proyecto">Proyecto Final</string>
-    <string name="Practicas">Prácticas de Laboratorio</string>
-    <string name="Quince">15%</string>
-    <string name="Diez">10%</string>
-    <string name="Cuarenta">40%</string>
-    <string name="Treintaycinco">35%</string>
+    <string name="Practicas">Prácticas</string>
+    <string name="Quince">   15%   </string>
+    <string name="Diez">   10%   </string>
+    <string name="Cuarenta">   40%   </string>
+    <string name="Treintaycinco">   35%   </string>
     <string name="calc">Calcular</string>
-    <string name="NotFin">Nota Final:</string>
+    <string name="NotFin">Nota Final: </string>
 
 </resources>

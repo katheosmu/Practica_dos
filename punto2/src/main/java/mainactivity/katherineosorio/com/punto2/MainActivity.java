@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static mainactivity.katherineosorio.com.punto2.R.id.rDiv;
 
 
@@ -85,31 +87,29 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         EditText eop2 = (EditText) findViewById(R.id.eOperand2);
         final TextView tresult = (TextView) findViewById(R.id.tResult);
 
-        double result;
+        double result=0;
         double op1 = Double.parseDouble(eop1.getText().toString());
         double op2 = Double.parseDouble(eop2.getText().toString());
+        DecimalFormat form = new DecimalFormat("0.00");
 
 
     // Check which radio button was clicked
     switch (flag) {
         case 0:
             result = op1 + op2;
-            tresult.setText(String.valueOf(result));
             break;
         case 1:
             result = op1 - op2;
-            tresult.setText(String.valueOf(result));
             break;
         case 2:
             result = op1 * op2;
-            tresult.setText(String.valueOf(result));
             break;
         case 3:
             result = op1 / op2;
-            tresult.setText(String.valueOf(result));
             break;
     }
 
+     tresult.setText(String.valueOf(form.format(result)));
 
 
     }

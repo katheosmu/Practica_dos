@@ -11,79 +11,100 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textSize="30dp"
+        android:gravity="center"
+        android:textSize="40dp"
         android:layout_weight="1"/>
 
     <!--Percentages-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_weight="2">
 
+        <!--columna 1-->
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_weight="2">
 
-            <TextView
+            <!--fila1-->
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Quices"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:layout_weight="1"/>
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Quices"
+                    android:textSize="25dp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Quince"
+                    android:textSize="25dp"
+                    android:id="@+id/eQuiz"
+                    android:layout_weight="1"/>
+                </LinearLayout>
+
+            <!--fila2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_weight="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Practicas"
+                    android:gravity="right"
+                    android:textSize="25dp"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Cuarenta"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:id="@+id/ePract"
+                    android:layout_weight="2"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <!--columna2-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Exposiciones"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="2">
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/Quince"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:id="@+id/eQuiz"
+                android:gravity="center"
+                android:textSize="25dp"
                 android:layout_weight="1"/>
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/Diez"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="30dp"
                 android:id="@+id/eExpos"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="2">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Practicas"
-                android:textAlignment="center"
-                android:textSize="30dp"
                 android:layout_weight="2"/>
 
             <TextView
@@ -91,23 +112,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Proyecto"
                 android:textAlignment="center"
-                android:textSize="30dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="2">
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/Cuarenta"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:id="@+id/ePract"
+                android:textSize="25dp"
                 android:layout_weight="1"/>
 
             <EditText
@@ -118,21 +123,26 @@
                 android:textSize="30dp"
                 android:id="@+id/eProyFin"
                 android:layout_weight="1"/>
+
         </LinearLayout>
 
-        <!--botonCalcular-->
+    </LinearLayout>
+
+         <!--botonCalcular-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calc"
             android:textSize="30dp"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:layout_gravity="center"
             android:id="@+id/bCalc"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -144,7 +154,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="30dp"
                 android:id="@+id/eResult"
                 android:layout_weight="500"/>
@@ -154,6 +164,5 @@
 
     </LinearLayout>
 
-</LinearLayout>
 
 

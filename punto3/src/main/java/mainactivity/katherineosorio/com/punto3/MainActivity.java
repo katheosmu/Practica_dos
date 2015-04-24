@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
@@ -30,6 +32,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         EditText ePract = (EditText) findViewById(R.id.ePract);
         TextView tResult = (TextView) findViewById(R.id.eResult);
 
+        DecimalFormat form = new DecimalFormat("0.00");
+
         double result;
         double Quiz = Double.parseDouble(eQuiz.getText().toString());
         double Expo = Double.parseDouble(eExpos.getText().toString());
@@ -37,7 +41,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         double Pory = Double.parseDouble(ePract.getText().toString());
 
         result = Quiz * 0.15 + Expo * 0.1 + Pract * 0.4 + Pory * 0.35;
-        tResult.setText(String.valueOf(result));
+        tResult.setText(String.valueOf(form.format(result)));
     }
 
     @Override

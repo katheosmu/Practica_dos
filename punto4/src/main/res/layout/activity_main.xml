@@ -13,51 +13,67 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="30dp"
-        android:layout_weight="1"/>
+        android:textSize="30dp"/>
 
     <!--Figuras Geométricas-->
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:id="@+id/radiog">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="@string/cuadrado"
-            android:id="@+id/rSuma"
-            android:textSize="30dp"
-            android:onClick="OnRadioButtonClicked"
-            android:layout_gravity="center"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/triangulo"
-            android:id="@+id/rRes"
-            android:textSize="30dp"
-            android:onClick="OnRadioButtonClicked"
-            android:layout_gravity="center"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="@string/rectangulo"
-            android:id="@+id/rMult"
-            android:onClick="OnRadioButtonClicked"
-            android:layout_gravity="center"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/circulo"
-            android:id="@+id/rDiv"
-            android:textSize="30dp"
-            android:onClick="OnRadioButtonClicked"
-            android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/cuadrado"
+                    android:id="@+id/rCuadrado"
+                    android:textSize="22dp"
+                    android:onClick="OnRadioButtonClicked"
+                    android:layout_gravity="center"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/triangulo"
+                    android:id="@+id/rTria"
+                    android:textSize="22dp"
+                    android:onClick="OnRadioButtonClicked"
+                    android:layout_gravity="center"/>
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="@string/rectangulo"
+                    android:id="@+id/rRecta"
+                    android:onClick="OnRadioButtonClicked"
+                    android:layout_gravity="center"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/circulo"
+                    android:id="@+id/rCirc"
+                    android:textSize="22dp"
+                    android:onClick="OnRadioButtonClicked"
+                    android:layout_gravity="center"/>
+
+            </RadioGroup>
 
     </RadioGroup>
 
+    <!--Lado1-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -67,11 +83,12 @@
             android:layout_height="wrap_content"
             android:text="@string/lado1"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lado1"/>
         </LinearLayout>
 
+    <!--lado2-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -81,11 +98,12 @@
             android:layout_height="wrap_content"
             android:text="@string/lado2"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lado2"/>
     </LinearLayout>
 
+    <!--Base-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -95,12 +113,13 @@
             android:layout_height="wrap_content"
             android:text="@string/base"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/base"
             android:checked="false" />
     </LinearLayout>
 
+    <!--Altura-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -115,6 +134,7 @@
             android:id="@+id/altura"/>
     </LinearLayout>
 
+    <!--Radio-->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -129,13 +149,22 @@
             android:id="@+id/radio"/>
     </LinearLayout>
 
+    <!--Boton-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Calc"
-        android:textSize="30dp"
-        android:layout_weight="3"
+        android:textSize="20dp"
         android:layout_gravity="center"
         android:id="@+id/bCalc"/>
+
+    <!--Resultado-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Resultado"
+        android:textSize="20dp"
+        android:id="@+id/tResult"/>
 
 </LinearLayout>

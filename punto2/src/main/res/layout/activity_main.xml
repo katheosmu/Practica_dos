@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/purple">
+    android:background="@color/lightblue">
 
     <!--Titulo-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/titulo"
-        android:textAlignment="center"
-        android:textSize="60dp"
+        android:gravity="center"
+        android:textSize="40dp"
         android:layout_weight="1"/>
 
     <!--Operandos-->
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calc"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:layout_weight="3"
             android:layout_gravity="center"
             android:id="@+id/bCalc"/>
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/resul"
-                android:textSize="30dp"/>
+                android:textSize="25dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
